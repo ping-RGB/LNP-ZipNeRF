@@ -1,0 +1,2 @@
+set CUDA_VISIBLE_DEVICES=0
+python train.py --gin_configs=configs/360.gin --gin_bindings="Config.data_dir = 'data/360_v2/bicycle'" --gin_bindings="Config.exp_name = '360_v2/bicycle'" --gin_bindings="Config.factor = 4"
